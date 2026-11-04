@@ -28,6 +28,7 @@ const filterByRating = (list, min) => {
     return list.filter(m => m.rating >= min);
 }
 
+console.log("8점 이상:", filterByRating(movies, 8).length + "편");
 const sortByRating = (list) => {
      return [...list].sort((a, b) => b.rating - a.rating);
 }
