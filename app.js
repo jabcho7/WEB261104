@@ -8,3 +8,9 @@ function average(list) {
  return sum / list.length;
 }
 console.log("평균:", average(movies));
+
+
+document.title = "내 영화 " + movies.length + "편"; 
+console.table(sortByRating(movies)); 
+document.getElementById("out").textContent = "평균 " + average(movies).toFixed(1) + "점, 최고 " +
+best(movies).title;

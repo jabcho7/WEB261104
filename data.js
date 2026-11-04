@@ -41,7 +41,7 @@ const yearsSince = (dateStr) => {
 
  console.log(yearsSince(movies[0].date) + "년 전 개봉");
 
- const postUrl = (path, size) => {
+ const posterUrl = (path, size) => {
     return "https://image.tmdb.org/t/p/" + size + path;
  }
  console.log(posterUrl(movies[0].poster, "w342"));
